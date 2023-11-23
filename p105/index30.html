@@ -80,6 +80,14 @@
 			border-right:solid 1px #000;
 			border-bottom:solid 1px #000;
 			}
+			@keyframes jsr{
+				0%{
+					background:red;
+				}
+				100%{
+					background:yellow;
+				}
+			}
 			#slidearea{
 				width:1000px;
 				height:200px;
@@ -89,6 +97,9 @@
 				padding-right:100px;
 				padding-top:50px;
 				padding-bottom:50px;
+				animation-name:jsr;
+				animation-duration:4s;
+				animation-iteration-count:5;
 				
 			}
 			#slidearea a:link,#slidearea a:visited{
@@ -148,17 +159,19 @@
 			.box img{
 				height:100%;
 				width:100%;
-				opacity:1;
+				opacity:0.7;
 				/*transition-property:transform;
 				transition-duration:4s;
-				transition-timing-function:ease;*/
-				transition:transform 4s 1s ease;
+				transition-timing-function:ease;
+				transition:opacity 2s,transform 4s;*/
+				transition:all 4s;
 			}
 			.box img:hover{
 				/*transform:rotate(30deg);
 				transform:scale(0.8,0.8);
 				transform:translate(100px,50px);*/
-				transform:skew(0,360deg);
+				transform:skew(0,30deg);
+				opacity:1;
 				
 			}
 			#fotterarea{
@@ -254,8 +267,7 @@
 				</ul>
 			</div>
 			<div id="slidearea">
-				<a href="http://www.google.com">GOOGLE</a>
-				<a href="http://www.facebook.com">FACEBOOK</a>
+				
 			</div>
 			<div id="darea">
 			</div>

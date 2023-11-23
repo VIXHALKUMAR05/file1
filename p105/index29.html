@@ -148,17 +148,19 @@
 			.box img{
 				height:100%;
 				width:100%;
-				opacity:1;
+				opacity:0.7;
 				/*transition-property:transform;
 				transition-duration:4s;
-				transition-timing-function:ease;*/
-				transition:transform 4s 1s ease;
+				transition-timing-function:ease;
+				transition:opacity 2s,transform 4s;*/
+				transition:all 4s;
 			}
 			.box img:hover{
 				/*transform:rotate(30deg);
 				transform:scale(0.8,0.8);
 				transform:translate(100px,50px);*/
-				transform:skew(0,360deg);
+				transform:skew(0,30deg);
+				opacity:1;
 				
 			}
 			#fotterarea{
