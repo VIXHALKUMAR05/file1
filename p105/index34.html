@@ -1,0 +1,340 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{
+				background-color:#ABCDEF;
+				background-image:url('');
+				background-repeat:no-repeat;
+				background-position:bottom center;
+				background-attachment:fixed;
+				margin:0px;
+			}
+			#mainarea{
+				height:1500px;
+				width:1200px;
+				background-color:yellow;
+				margin:0 auto;
+			}
+			#toparea{
+				height:150px;
+				width:1200px;
+				background-color:#306FF5;
+			}
+			#logoarea{
+				width:150px;
+				height:150px:
+				background:#E93F46;
+				float:left;
+				 }
+			#titlearea{
+				width:1050px;
+				height:150px;
+				background:#69FF28;
+				float:right;
+				 }
+			#titlearea h1{
+				color:red;
+				text-shadow:5px 5px 5px black,
+				            -5px -5px 5px red;		
+			}
+			#menuarea{
+				width:1200px;
+				height:40px;
+				background:#FFF;
+				float:left;
+			}
+			#menuarea ul{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#menuarea ul li a:link,#menuarea ul li a:visited{
+				color:red;
+				background:green;
+				text-decoration:none;
+				padding:10px 25px;
+				display:block;
+				border-right:solid 2px cyan;
+			}
+			#menuarea ul li a:hover{
+				color:black;
+				background:red;
+			}
+			#menuarea ul li{
+				float:left;
+			}
+			#menuarea ul li ul{
+				display:none;
+			}
+			#menuarea ul li:hover ul{
+			display:block;
+			position:absolute;
+			z-index:100;
+			}
+			#menuarea ul li:hover ul li{
+			float:none;
+			}
+			#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{	
+			border-left:solid 1px #000;
+			border-right:solid 1px #000;
+			border-bottom:solid 1px #000;
+			}
+			@keyframes move{
+				0%{
+					transform:translate(0,0);
+				}
+				25%{
+					width:80px;
+					height:80px;
+					background:yellow;
+					transform:translate(1000px,0);
+					border-radius:50px;
+				}
+				50%{
+					width:150px;
+					height:80px;
+					background:green;
+					transform:translate(1000px,200px);
+					border-radius:0px;
+				}
+				75%{
+					width:80px;
+					height:80px;
+					background:blue;
+					transform:translate(0,200px);
+				}
+				100%{
+					transform:translate(0,0);
+				}
+			}
+			#slidearea{
+				width:1000px;
+				height:200px;
+				background:#FFF;
+				float:left;
+				padding-left:100px;
+				padding-right:100px;
+				padding-top:50px;
+				padding-bottom:50px;
+				overflow:hidden;
+			}
+			#slide{
+				height:80px;
+				width:80px;
+				animation-name:move;
+				animation-duration:4s;
+				animation-iteration-count:infinite;
+				animation-timing-function:ease-in-out;
+			}
+			#slidearea a:link,#slidearea a:visited{
+				color:red;
+				text-decoration:none;
+				padding:10px 25px;
+				background:yellow;
+			}
+			#slidearea a:hover{
+				color:pink;
+				text-decoration:underline;
+				background:violet;
+				border-radius:10px;
+			}
+			#s1{
+				width:1000px;
+				height:200px;
+				background:#FF1B00;
+				
+			  }
+			#darea{
+				width:1200px;
+				height:300px;
+				background:#E320E3;
+				float:left;
+				/*background-image:linear-gradient(to top,red,yellow,green,blue);
+				background-image:linear-gradient(to top,red 30%,yellow 90%,pink 100%);
+				background-image:linear-gradient(120deg,blue 40%,yellow 80%,brown 100%);
+				background-image:repeating-linear-gradient(to right,yellow 0%,#A000D3 20%);*/
+				background-image:repeating-radial-gradient(brown 0%,yellow 20%);
+			        float:left;	
+			}
+			.d11{
+				width:500px;
+				height:200px;
+				float:left;
+				margin:50px;
+			       }
+			.bg1{
+				background:#6E2C00;
+			}
+			.bg2{
+				background:#D4AC0D;
+			}
+			#boxarea{
+				width:1200px;
+				height:300px;
+				background:#1BC61D;
+				float:left;
+			}
+			.box{
+				width:300px;
+				height:200px;
+				margin:50px;
+				float:left;
+			}
+			.box img{
+				height:100%;
+				width:100%;
+				opacity:0.7;
+				/*transition-property:transform;
+				transition-duration:4s;
+				transition-timing-function:ease;
+				transition:opacity 2s,transform 4s;*/
+				transition:all 4s;
+			}
+			.box img:hover{
+				/*transform:rotate(30deg);
+				transform:scale(0.8,0.8);
+				transform:translate(100px,50px);*/
+				transform:skew(0,30deg);
+				opacity:1;
+				
+			}
+			#fotterarea{
+				width:1200px;
+				height:410px;
+				background:#1046FF;
+				float:left;
+			}
+			#f1{
+				width:300px;
+				height:410px;
+				background:#EE3908;
+				float:left;
+			}
+			#f1 ul{
+				list-style-type:none;
+				list-style-position:outside;
+				font-family:Monotype Corsiva;
+				color:pink;
+				list-style-image:url('http://mpsckp.com/images/arr.png');
+				/*list-style:none url('http://mpsckp.com/images/arr.png') inside;*/
+			}
+			#f2{
+				width:300px;
+				height:410px;
+				background:#F0119B;
+				float:left;
+			}
+			#f2 ul{
+				list-style:none;
+				margin:0;
+				
+			}
+			#f2 ul li:hover{
+				color:white;
+				font-size:20px;
+				list-style-image:url('http://mpsckp.com/images/arr.png');
+			}
+			#f3{
+				width:300px;
+				height:410px;
+				background:#E7FF3D;
+				float:left;
+			}
+			#f3 ul{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#f3 ul li a:link,#f3 ul li a:visited{
+				color:red;
+				background:green;
+				text-decoration:none;
+				padding:10px 25px;
+				display:block;
+				border-bottom:solid 1px black;
+			}
+			#f3 ul li a:hover{
+				color:black;
+				background:red;
+			}
+			#f4{
+				width:300px;
+				height:410px;
+				background:#FF5D00;
+				float:left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+				<div id="logoarea">
+				</div>
+				<div id="titlearea">
+					<h1>VISHAL KUMAR</h1>
+				</div>
+			</div>
+			<div id="menuarea">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li> <a href="#"> PRODUCT </a> 
+							<ul>
+								<li> <a href="#"> PRODUCT 1 </a> </li>
+								<li> <a href="#"> PRODUCT 2 </a> </li>
+								<li> <a href="#"> PRODUCT 3 </a> </li>
+								<li> <a href="#"> PRODUCT 4 </a> </li>
+							</ul>
+						 </li>
+				</ul>
+			</div>
+			<div id="slidearea">
+				<div id="slide"></div>
+			</div>
+			<div id="darea">
+			</div>
+			<div id="boxarea">
+				<div class="box">
+					<img src="wallpaper.jpg"/>
+				</div>
+				<div class="box">
+					<img src="wallpaper.jpg"/>
+				</div>
+				<div class="box">
+					<img src="wallpaper.jpg"/>
+				</div>
+			</div>
+			<div id="fotterarea">
+				<div id="f1">
+					<ul>
+						<li>HOME</li>
+						<li>ABOUT</li>
+						<li>GALLERY</li>
+						<li>CONTACT</li>
+					</ul>
+				</div>
+				<div id="f2">
+					<ul>
+						<li>HOME</li>
+						<li>ABOUT</li>
+						<li>GALLERY</li>
+						<li>CONTACT</li>
+					</ul>
+				</div>
+				<div id="f3">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">GALLERY</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+				<div id="f4">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
