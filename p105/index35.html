@@ -4,8 +4,9 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="animate.css">
 	</head>
 	<body>
 		
@@ -39,13 +40,13 @@
 			<div id="darea">
 			</div>
 			<div id="boxarea">
-				<div class="box">
+				<div class="box wow fadeInRight" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;">
 					<img src="wallpaper.jpg"/>
 				</div>
-				<div class="box">
+				<div class="box wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
 					<img src="wallpaper.jpg"/>
 				</div>
-				<div class="box">
+				<div class="box wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
 					<img src="wallpaper.jpg"/>
 				</div>
 			</div>
@@ -78,5 +79,9 @@
 				</div>
 			</div>
 		</div>
+		<script src="wow.min.js"></script>
+		<script>
+    		 new WOW().init();
+    		</script>
 	</body>
 </html>

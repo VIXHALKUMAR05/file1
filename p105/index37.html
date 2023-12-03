@@ -31,7 +31,7 @@
 				width:1050px;
 				height:150px;
 				background:#69FF28;
-				float:right;
+				float:left;
 				 }
 			#titlearea h1{
 				color:red;
@@ -90,29 +90,18 @@
 			}
 			#slidearea{
 				width:1000px;
-				height:200px;
+				height:400px;
 				background:#3CFFF0;
 				float:left;
-				padding-left:100px;
-				padding-right:100px;
-				padding-top:50px;
-				padding-bottom:50px;
-				animation-name:jsr;
-				animation-duration:4s;
-				animation-iteration-count:5;
-				
+				position:relative;
 			}
-			#slidearea a:link,#slidearea a:visited{
-				color:red;
-				text-decoration:none;
-				padding:10px 25px;
-				background:yellow;
-			}
-			#slidearea a:hover{
-				color:pink;
-				text-decoration:underline;
-				background:violet;
-				border-radius:10px;
+			#slidearea h1{
+				top:120px;
+				left:250px;
+				position:absolute;
+				color: #FFFFFF;
+
+				text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, 				#FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 			}
 			#s1{
 				width:1000px;
@@ -267,9 +256,10 @@
 				</ul>
 			</div>
 			<div id="slidearea">
-				<video width="" height="" autoplay muted controls loop poster="rain.jpeg">
+				<video width="" height="" autoplay muted loop>
 					<source src="rain.mp4" type="video/mp4"/>
 				</video>
+				<h1>RAIN</h1>
 			</div>
 			<div id="darea">
 			</div>
