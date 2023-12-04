@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			#darea input[type=text]{
+				border:none;
+				border-bottom:solid 1px green;
+				padding:10px;
+				width:500px;
+				transition:all 2s;
+			}
+			#darea input[type=text]:focus{
+				outline:none;
+				width:700px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="darea">
+		<form>
+		<input type="hidden" name="pan" value="0"/>
+		<label>Name</label>
+		<input type="text" name="Sname" placeholder="Enter Your Name" required/><br><br>
+		<label>Mob. No.</label>
+		<input type="number" name="Mobile" placeholder="Enter Your Mobile No." value="" required/><br><br>
+		<label>E-mail</label>
+		<input type="email" name="Email" placeholder="Enter Your E-mail" value="" required/><br><br>
+		<label>Date Of Birth</label> 
+		<input type="date" name="DOB" placeholder="Enter Your DOB" value="" required/><br><br>
+		<label>Photo</label>
+		<input type="file" name="Photo" placeholder="Image" value="" required/><br><br>
+		<label>Password</label>
+		<input type="password" name="password" placeholder="Enter Password"  required/><br><br>
+		<label>Gender</label>
+		<input type="radio" name="gender" value="M" checked/>Male
+		<input type="radio" name="gender" value="F" checked/>Female<br><br>
+		<label>Documents</label>
+		<input type="checkbox" name="pan" value="Y" />PAN
+		<input type="checkbox" name="pan" value="Y" />Aadhar
+		<input type="checkbox" name="pan" value="Y" />Driving Licence
+		
+		</form>
+	</div>
+	</body>
+<html>
