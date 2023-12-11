@@ -2,9 +2,6 @@
 	<head>
 		<title></title>
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-		<!-- <link rel="stylesheet" href="http://localhost:3002/dist/aos.css" /> -->
-		<link rel="stylesheet" href="dist/css/styles.css" />
-
 		<style type="text/css">
 			body{
 				background-color:#ABCDEF;
@@ -31,6 +28,11 @@
 				background:#E93F46;
 				float:left;
 				 }
+			#logoarea img{
+				width:120px;
+				height:120px;
+				margin:60px 15px -45px 15px;
+			}	
 			#titlearea{
 				width:1050px;
 				height:150px;
@@ -84,17 +86,6 @@
 			border-right:solid 1px #000;
 			border-bottom:solid 1px #000;
 			}
-			@keyframes jsr{
-				0%{
-					background:red;
-				}
-				50%{
-					background:green;
-				}
-				100%{
-					background:yellow;
-				}
-			}
 			#slidearea{
 				width:1000px;
 				height:200px;
@@ -104,9 +95,6 @@
 				padding-right:100px;
 				padding-top:50px;
 				padding-bottom:50px;
-				animation-name:jsr;
-				animation-duration:4s;
-				animation-iteration-count:5;
 				
 			}
 			#slidearea a:link,#slidearea a:visited{
@@ -128,16 +116,7 @@
 				
 			  }
 			#darea{
-				width:1200px;
-				height:300px;
-				background:#E320E3;
-				float:left;
-				/*background-image:linear-gradient(to top,red,yellow,green,blue);
-				background-image:linear-gradient(to top,red 30%,yellow 90%,pink 100%);
-				background-image:linear-gradient(120deg,blue 40%,yellow 80%,brown 100%);
-				background-image:repeating-linear-gradient(to right,yellow 0%,#A000D3 20%);*/
-				background-image:repeating-radial-gradient(brown 0%,yellow 20%);
-			        float:left;	
+				 <canvas id="myChart"></canvas>	
 			}
 			.d11{
 				width:500px;
@@ -160,26 +139,15 @@
 			.box{
 				width:300px;
 				height:200px;
+				background:skyblue;
 				margin:50px;
 				float:left;
+				overflow:auto;
 			}
 			.box img{
 				height:100%;
 				width:100%;
-				opacity:0.7;
-				/*transition-property:transform;
-				transition-duration:4s;
-				transition-timing-function:ease;
-				transition:opacity 2s,transform 4s;*/
-				transition:all 4s;
-			}
-			.box img:hover{
-				/*transform:rotate(30deg);
-				transform:scale(0.8,0.8);
-				transform:translate(100px,50px);*/
-				transform:skew(0,30deg);
-				opacity:1;
-				
+				opacity:0.8;
 			}
 			#fotterarea{
 				width:1200px;
@@ -252,6 +220,7 @@
 		<div id="mainarea">
 			<div id="toparea">
 				<div id="logoarea">
+					<img src="wallpaper.jpg"/>
 				</div>
 				<div id="titlearea">
 					<h1>VISHAL KUMAR</h1>
@@ -274,25 +243,25 @@
 				</ul>
 			</div>
 			<div id="slidearea">
-				
+				<div data-aos="zoom-in"></div>
+				<a href="http://www.google.com">GOOGLE</a>
+				<a href="http://www.facebook.com">FACEBOOK</a>
 			</div>
 			<div id="darea">
+				<canvas id="myChart"></canvas>
 			</div>
 			<div id="boxarea">
-				<div data-aos="zoom-in-down">
 				<div class="box">
-					<img src="wallpaper.jpg"/>
+					Ranchi, Capital of Jharkhand is divided into Ranchi and Bundu subdivisions and each subdivision is further divided into blocks, panchayats and villages.It consists of 18 blocks and 305 panchayats.Under Ranchi SubDivision,there are 14 blocks and Bundu SubDivision consists of 4 blocks.
+Ranchi, in its modern form, is the capital city of the Indian state of Jharkhand. The city has a moderate climate and was the summer capital of Bihar until Jharkhand was separated in the year 2000. It is popularly known as a “City of Water Falls”.According to one popular tale, Captain choose "Archi" an Oraon tribal village as headquarters. Archi means Bamboo forest in local Nagpuri dialect. The British inadvertently named "Archi" as "Ranchi". Captain Thomas Wilkinson renamed Kishunpur village as Rachi. Up to 1927, the place was known as Rachi.
 				</div>
-				</div>
-				<div data-aos="zoom-in-right">
 				<div class="box">
-					<img src="wallpaper.jpg"/>
+					Ranchi, Capital of Jharkhand is divided into Ranchi and Bundu subdivisions and each subdivision is further divided into blocks, panchayats and villages.It consists of 18 blocks and 305 panchayats.Under Ranchi SubDivision,there are 14 blocks and Bundu SubDivision consists of 4 blocks.
+Ranchi, in its modern form, is the capital city of the Indian state of Jharkhand. The city has a moderate climate and was the summer capital of Bihar until Jharkhand was separated in the year 2000. It is popularly known as a “City of Water Falls”.According to one popular tale, Captain choose "Archi" an Oraon tribal village as headquarters. Archi means Bamboo forest in local Nagpuri dialect. The British inadvertently named "Archi" as "Ranchi". Captain Thomas Wilkinson renamed Kishunpur village as Rachi. Up to 1927, the place was known as Rachi.
 				</div>
-				</div>
-				<div data-aos="zoom-out-down">
 				<div class="box">
-					<img src="wallpaper.jpg"/>
-				</div>
+					Ranchi, Capital of Jharkhand is divided into Ranchi and Bundu subdivisions and each subdivision is further divided into blocks, panchayats and villages.It consists of 18 blocks and 305 panchayats.Under Ranchi SubDivision,there are 14 blocks and Bundu SubDivision consists of 4 blocks.
+Ranchi, in its modern form, is the capital city of the Indian state of Jharkhand. The city has a moderate climate and was the summer capital of Bihar until Jharkhand was separated in the year 2000. It is popularly known as a “City of Water Falls”.According to one popular tale, Captain choose "Archi" an Oraon tribal village as headquarters. Archi means Bamboo forest in local Nagpuri dialect. The British inadvertently named "Archi" as "Ranchi". Captain Thomas Wilkinson renamed Kishunpur village as Rachi. Up to 1927, the place was known as Rachi.
 				</div>
 			</div>
 			<div id="fotterarea">
@@ -324,23 +293,38 @@
 				</div>
 			</div>
 		</div>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Magenta', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 8, 9],
+        borderWidth: 1,
+	backgroundColor:'#FFb1C1',
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<!-- <script src="http://localhost:3002/dist/aos.js"></script> -->
 
 		<script>
 			AOS.init({
 				easing: 'ease-out-back',
 				duration: 1000
-			});
-		</script>
-
-		<script>
-			hljs.initHighlightingOnLoad();
-
-			$('.hero__scroll').on('click', function(e) {
-				$('html, body').animate({
-					scrollTop: $(window).height()
-				}, 1200);
 			});
 		</script>
 	</body>
